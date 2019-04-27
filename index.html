@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="owner" content="Rachell Garrido">
+    <meta name="author" content="rachellgarrido.com">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Programador, programador web, portafolio de programador, página de programador">
+    <link rel="icon" href="icons/favicon.png">
+    <title>Rachell Garrido</title>
+    <script src="js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/roboto.css">
+    <link rel="stylesheet" href="css/coolvetica.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="headTitle">
+            <a href="index.html">
+                <figure class="headerLogoContainer"> 
+                    <img src="img/iconrg.png" alt="Logo Rachell Garrido" class="headerLogo">
+                </figure>
+            </a>
+            <a href="index.html">Rachell Garrido</a>
+        </h1>
+        <nav id="mainMenu" class="mainMenu">
+            <figure id="showMainMenu" class="menuMovil" onclick="displayMenu()">
+                <img src="icons/menu.png" alt="Botón para mostrar el menú móvil" class="menuIcon">
+            </figure>
+
+            <div id="cardMenu" class="cardMenu">
+            <figure id="hideMainMenu" class="menuMovil" onclick="displayMenu()">
+                <img src="icons/cross.png" alt="Botón para cerrar el menú móvil" class="menuIcon">
+            </figure>
+            <figure class="menuLogoContainer">
+                    <img src="img/iconrg.png" alt="Logo Rachell Garrido encabezado del menú" class="menuLogo">
+            </figure>
+            
+                <ul class="menuList">
+                    <li class="listItem"><a class="linkItem i01" href="#Inicio">Inicio</a></li>
+                    <li class="listItem"><a class="linkItem i02" href="#Sobre-mí">Sobre mí</a></li>
+                    <li class="listItem"><a class="linkItem i03" href="#¿Qué-hago-ahora?">¿Qué hago ahora?</a></li>
+                    <li class="listItem"><a class="linkItem i04" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div id="prev_page" class="prev_page">
+                <img src="/icons/iconarrow.png" alt="Flecha de navegación anterior" class="prev_arrow">
+            </div>
+            <div id="next_page" class="next_page">
+                <img src="/icons/iconarrow.png" alt="Flecha de navegación siguiente" class="next_arrow">
+            </div>
+    </header>
+
+    <div id="page_sections">
+        <section class="page" id="home"></section>
+
+
+        <section class="page" id="aboutme"></section>
+        <section class="page" id="whatImDoingNow"></section>
+        <section class="page" id="contact"></section>
+    </div>
+    
+    <script src="js/displayMenu.js"></script>
+</body>
+</html>

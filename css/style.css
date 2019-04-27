@@ -1,0 +1,236 @@
+body{
+    font-family: "Roboto-Thin", sans-serif;
+    font-size: 16px;
+    position: relative;
+    background: white;
+}
+
+header{
+    width: 100%;
+    background: black;
+    height: 50px;
+    position: relative;
+    z-index: 90;
+}
+
+.headTitle{
+    display: none;
+}
+
+.menuMovil{
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.menuIcon{
+    height: 100%;
+    padding: .3em;
+}
+
+.cardMenu{
+    position: relative;
+    width: 250px;
+    background: black;
+    top: -30px;
+    border-right: 4px solid #CCCCD9;
+    padding-bottom: 50px;
+    z-index: 90;
+}
+
+.menuLogoContainer{
+    height: 180px;
+    width: 80%;
+    margin: 30px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+.menuLogo{
+    width: 100%;
+}
+
+.menuList{
+    margin-top: -20px;
+    padding-left: 6px;
+}
+.listItem{
+    list-style-type: none;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: .5em 0em;
+    cursor: pointer;
+}
+.linkItem{
+    text-decoration: none;
+    color: white;
+}
+
+.i01::before{
+    font-family: 'icomoon';
+    content: "\e905";
+    margin: 0em .4em;
+    color: #CCCCD9;
+ 
+}
+.i02::before{
+    font-family: 'icomoon';
+    content: "\e9d9";
+    margin: 0em .4em;
+    color: #CCCCD9;
+}
+.i03::before{
+    font-family: 'icomoon';
+    content: "\e900";
+    margin: 0em .4em;
+    color: #CCCCD9;
+}
+.i04::before{
+    font-family: 'icomoon';
+    content: "\e901";
+    margin: 0em .4em;
+    color: #CCCCD9;
+}
+
+.listItem:hover{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.prev_page,
+.next_page{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.prev_page{
+    right: 60px;
+}
+.next_page{
+    right: 0px;
+}
+
+.prev_arrow,
+.next_arrow{
+    position: relative;
+    width: 200%;
+    top: -25px;
+    right: 25px;
+}
+
+.next_arrow{
+    transform: rotate(180deg)
+}
+
+
+
+@media screen and (min-width: 480px){
+    body{
+        background: orange
+    }
+
+}
+@media screen and (min-width: 600px){
+    body{
+        background: yellow
+    }
+
+}
+@media screen and (min-width: 767px){
+    header{
+        height: 50px;
+    }
+    .headTitle{
+        display: inline-block;
+        width: 20%;
+        margin: 0px;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 20px;
+        min-width: 200px;
+       
+    }
+    .headTitle >*{
+        font-family: "Coolvetica";
+        font-weight: lighter;
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #CCCCD9;
+        font-size: 1em;
+        margin: 0px 3px;
+        letter-spacing: 2px;
+    }
+
+    .headerLogoContainer{
+        height: 45px;
+        width: 45px;
+        margin: 0px;
+    }
+    .headerLogo{
+        width: 100%;
+    }
+
+    /*nav*/
+    .mainMenu{
+        background: red;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 40%;
+        top: -6px;
+    }
+
+    /*oculta imágenes del menú*/
+    .mainMenu figure{
+        display: none;
+    }
+    .cardMenu{
+        background: none;
+        display: inline-block;
+        border: none;
+        position: relative;
+        top: 5px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0px;
+    }
+    .menuList{
+        margin: -15px 0px 0px 0px;
+        padding: 0;
+    }
+    .listItem{
+        display: inline-block;
+        
+    }
+    .linkItem{
+
+    }
+    .listItem:hover{
+    border: none;
+    }
+
+    .i01::before,
+    .i02::before,
+    .i03::before,
+    .i04::before{
+        content: "";
+    }
+
+    .next_page,
+    .prev_page{
+        display: none
+    }
+}
+@media screen and (min-width: 950px){
+    body{
+        background: blue
+    }
+
+}
