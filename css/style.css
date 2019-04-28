@@ -11,6 +11,7 @@ header{
     height: 50px;
     position: relative;
     z-index: 90;
+    top: 0px;
 }
 
 .headTitle{
@@ -18,26 +19,34 @@ header{
 }
 
 .menuMovil{
-    height: 25px;
-    width: 30px;
-    cursor: pointer;
-    line-height: 40px;
-    margin: 0px;
-    margin-left: 10px;
-    padding-top: 5px;
+    width: 35px;
+	height: 35px;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+    overflow: hidden;
+    padding: .3em;
+    
+}
+.prev_page{
+	right: 35px;
+}
+.next_page{
+	right: 5px;
 }
 
 .menuIcon{
     height: 100%;
-    padding: .3em;
 }
 
 .cardMenu{
     position: relative;
     width: 250px;
     background: black;
-    top: -30px;
+    top: 0px;
     border-right: 4px solid #CCCCD9;
+    border-bottom: 4px solid #CCCCD9;
     padding-bottom: 50px;
     z-index: 90;
 }
@@ -45,16 +54,18 @@ header{
 .menuLogoContainer{
     height: 180px;
     width: 80%;
-    margin: 30px 0px;
+    margin: 0px;
     margin-left: 10%;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
+    position: relative;
+    top: 35px;
 }
 .menuLogo{
     width: 100%;
 }
 
 .menuList{
-    margin-top: -20px;
+    margin-top: 0px;
     padding-left: 6px;
 }
 .listItem{
@@ -63,6 +74,11 @@ header{
     line-height: 40px;
     padding: .5em 0em;
     cursor: pointer;
+    border-top: 1px solid rgba(204,204,217,.3);
+}
+.listItem:nth-last-child(1){
+    border-bottom: 1px solid rgba(204,204,217,.3);
+
 }
 .linkItem{
     text-decoration: none;
@@ -74,7 +90,6 @@ header{
     content: "\e905";
     margin: 0em .4em;
     color: #CCCCD9;
- 
 }
 .i02::before{
     font-family: 'icomoon';
@@ -95,18 +110,14 @@ header{
     color: #CCCCD9;
 }
 
-.listItem:hover{
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
-}
 .prev_page,
 .next_page{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
+    display: none;
+    width: 10%;
+	top: -19px;
+	left: -19px;
+    position: relative;
+    background: red;
 }
 
 .prev_page{
@@ -118,8 +129,9 @@ header{
 
 .prev_arrow,
 .next_arrow{
+    background: blue;
     position: relative;
-    width: 200%;
+    width: 100%;
     top: -25px;
     right: 25px;
 }
@@ -127,8 +139,6 @@ header{
 .next_arrow{
     transform: rotate(180deg)
 }
-
-
 
 @media screen and (min-width: 480px){
     body{
@@ -143,89 +153,8 @@ header{
 
 }
 @media screen and (min-width: 767px){
-    header{
-        height: 50px;
-    }
-    .headTitle{
-        display: inline-block;
-        width: 20%;
-        margin: 0px;
-        height: 50px;
-        line-height: 50px;
-        margin-left: 20px;
-        min-width: 200px;
-       
-    }
-    .headTitle >*{
-        font-family: "Coolvetica";
-        font-weight: lighter;
-        display: inline-block;
-        vertical-align: middle;
-        text-decoration: none;
-        color: #CCCCD9;
-        font-size: 1em;
-        margin: 0px 3px;
-        letter-spacing: 2px;
-    }
-
-    .headerLogoContainer{
-        height: 45px;
-        width: 45px;
-        margin: 0px;
-    }
-    .headerLogo{
-        width: 100%;
-    }
-
-    /*nav*/
-    .mainMenu{
-        background: red;
-        display: inline-block;
-        vertical-align: middle;
-        position: relative;
-        width: 40%;
-        top: -6px;
-    }
-
-    /*oculta imágenes del menú*/
-    .mainMenu figure{
-        display: none;
-    }
-    .cardMenu{
-        background: none;
-        display: inline-block;
-        border: none;
-        position: relative;
-        top: 5px;
-        width: 100%;
-        text-align: right;
-        padding-bottom: 0px;
-    }
-    .menuList{
-        margin: -15px 0px 0px 0px;
-        padding: 0;
-    }
-    .listItem{
-        display: inline-block;
-        
-    }
-    .linkItem{
-
-    }
-    .listItem:hover{
-    border: none;
-    }
-
-    .i01::before,
-    .i02::before,
-    .i03::before,
-    .i04::before{
-        content: "";
-    }
-
-    .next_page,
-    .prev_page{
-        display: none
+    body{
+        background: green;
     }
 }
 @media screen and (min-width: 950px){
