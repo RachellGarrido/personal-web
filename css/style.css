@@ -16,6 +16,7 @@ header{
 
 .headTitle{
     display: none;
+    font-family: 'Coolvetica', sans-serif;
 }
 
 .menuMovil{
@@ -41,6 +42,7 @@ header{
 }
 
 .cardMenu{
+    display: none;
     position: relative;
     width: 250px;
     background: black;
@@ -155,10 +157,105 @@ header{
     body{
         background: green;
     }
+    .menuMovil,
+    .prev_page,
+    .next_page,
+    .cardMenu figure{
+        display: none;
+    }
+    .i01::before,
+    .i02::before,
+    .i03::before,
+    .i04::before,
+    .listItem:nth-last-child(1){
+        content: "";
+        border: none;
+    }
+    
+    header{
+        height: 65px;
+    }
+
+    .headTitle{
+        display: inline-block;
+        width: 20%;
+        margin: 0px;
+        height: 60px;
+        line-height: 50px;
+        margin-left: 25px;
+        min-width: 200px;
+        padding-right: 0px;
+    }
+    .headTitle > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: white;
+        font-size: .7em;
+        margin: 0px 2px;
+    }
+    .headerLogoContainer{
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+    .headerLogo{
+        width: 100%;
+    }
+
+    /*nav*/
+    .mainMenu{
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        width: 70%;
+    }
+    /*div del menu*/
+    .cardMenu{
+        display: inline-block;
+        background: none;
+        border: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+    }
+    /*ul*/
+    .menuList{
+        margin: 0px;
+        padding-left: 0px;
+        
+    }
+    
+    /*li*/
+    .listItem{
+        display: inline-block;
+        border: none;
+        width: 140px;
+        text-align: center;
+        font-size: 1em;
+        margin: 0px -5px;
+        padding: 0px;
+        vertical-align: middle;
+    }
 }
 @media screen and (min-width: 950px){
     body{
         background: blue
+    }
+    .headTitle{
+        margin-left: 40px;
+    }
+    .headTitle>*{
+        font-size: .9em;
+    }
+    .headerLogoContainer{
+        height: 45px;
+        width: 45px;
+    }
+    .listItem{
+        width: 155px;
+        font-size: 1.1em;
     }
 
 }
