@@ -112,28 +112,27 @@ header{
 
 .prev_page,
 .next_page{
-    display: none;
-    width: 10%;
-	top: -19px;
-	left: -19px;
-    position: relative;
-    background: red;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: 5px;
+    top: 0px;
+    overflow: hidden;
 }
 
 .prev_page{
-    right: 60px;
+    right: 55px;
 }
 .next_page{
-    right: 0px;
+    right: 5px;
 }
 
 .prev_arrow,
 .next_arrow{
-    background: blue;
     position: relative;
-    width: 100%;
-    top: -25px;
-    right: 25px;
+    width: 250%;
+    top: -30px;
+    right: 30px;
 }
 
 .next_arrow{
