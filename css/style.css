@@ -75,7 +75,6 @@ header{
     font-size: 1.5em;
     line-height: 40px;
     padding: .5em 0em;
-    cursor: pointer;
     border-top: 1px solid rgba(204,204,217,.3);
 }
 .listItem:nth-last-child(1){
@@ -85,6 +84,7 @@ header{
 .linkItem{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .i01::before{
@@ -120,6 +120,7 @@ header{
     margin: 5px;
     top: 0px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .prev_page{
@@ -136,27 +137,52 @@ header{
     top: -30px;
     right: 30px;
 }
-
 .next_arrow{
     transform: rotate(180deg)
 }
+/*div de paginas*/
+.page_sections{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    top: 0px;
+}
+/*Todas las página*/
+.page{
+    position: absolute;
+	width: 100%;
+	top: 0px;
+    left: 0px;
+    height: 100vh;
+}
+
+.home{
+    background: red;
+}
+.about{
+
+    background: yellowgreen;
+}
+.what{
+
+    background: orangered;
+}
+.contact{
+
+    background: purple;
+}
+
+
 
 @media screen and (min-width: 480px){
-    body{
-        background: orange
-    }
+
 
 }
 @media screen and (min-width: 600px){
-    body{
-        background: yellow
-    }
+
 
 }
 @media screen and (min-width: 767px){
-    body{
-        background: green;
-    }
     .menuMovil,
     .prev_page,
     .next_page,
@@ -237,6 +263,9 @@ header{
         margin: 0px -5px;
         padding: 0px;
         vertical-align: middle;
+    }
+    .i01{
+        margin-left: 10px
     }
 }
 @media screen and (min-width: 950px){

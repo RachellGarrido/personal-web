@@ -41,30 +41,29 @@
             </figure>
             
                 <ul class="menuList">
-                    <li class="listItem"><a class="linkItem i01" href="#Inicio">Inicio</a></li>
-                    <li class="listItem"><a class="linkItem i02" href="#Sobre-mí">Sobre mí</a></li>
-                    <li class="listItem"><a class="linkItem i03" href="#Qué-hago-ahora">¿Qué hago ahora?</a></li>
-                    <li class="listItem"><a class="linkItem i04" href="#">Contacto</a></li>
+                    <li class="listItem"><a class="linkItem i01" onclick="displayPageMenu('home')" href="#inicio">Inicio</a></li>
+                    <li class="listItem"><a class="linkItem i02" onclick="displayPageMenu('aboutMe')" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="listItem"><a class="linkItem i03" onclick="displayPageMenu('whatImDoingNow')" href="#que-hago-ahora">¿Qué hago ahora?</a></li>
+                    <li class="listItem"><a class="linkItem i04" onclick="displayPageMenu('contact')" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>
-            <div id="prev_page" class="prev_page">
+            <div id="prev_page" class="prev_page" onclick="displayPageButton('prev')">
                 <img src="/icons/iconarrow.png" alt="Flecha de navegación anterior" class="prev_arrow">
             </div>
-            <div id="next_page" class="next_page">
+            <div id="next_page" class="next_page" onclick="displayPageButton('next')">
                 <img src="/icons/iconarrow.png" alt="Flecha de navegación siguiente" class="next_arrow">
             </div>
     </header>
 
-    <div id="page_sections">
-        <section class="page" id="home"></section>
-
-
-        <section class="page" id="aboutme"></section>
-        <section class="page" id="whatImDoingNow"></section>
-        <section class="page" id="contact"></section>
+    <div id="page_sections" class="page_sections">
+        <section class="page home" id="home" style="display:block"></section>
+        <section class="page about" id="aboutMe" style="display:none"></section></section>
+        <section class="page what" id="whatImDoingNow" style="display:none"></section></section>
+        <section class="page contact" id="contact" style="display:none"></section></section>
     </div>
+    <div class="ejemplo"></div>
     
-    <script src="js/displayMenu.js"></script>
+    <script src="js/display.js"></script>
 </body>
 </html>
