@@ -46,16 +46,15 @@ function displayMenu(){
 }
 
 function displayPageButton(nav){
-  var page = new Array(4)
+  var page = new Array(3)
   page[0] = "home"
   page[1] = "aboutMe"
   page[2] = "whatImDoingNow"
-  page[3] = "contact"
 
   var search
   var show
 
-  for(var i =0;i<4;i++){
+  for(var i =0;i<3;i++){
       
       search = document.getElementById(page[i])
       show = search.style.display;
@@ -65,41 +64,39 @@ function displayPageButton(nav){
           search.style.display = "none";
           if (nav == "next"){
             i++; 
-            if (i > 3 ) i = 0;
+            if (i > 2 ) i = 0;
           }  
           if (nav == "prev"){
             i--; 
-            if (i < 0) i = 3;
+            if (i < 0) i = 2;
           } 
           search = document.getElementById(page[i]);
           search.style.display = "block";  
           break;
         }
       }
-  }
+}
+
 
 function displayPageMenu(nav){
-  var page = new Array(4)
+  var page = new Array(3)
   page[0] = "home"
   page[1] = "aboutMe"
   page[2] = "whatImDoingNow"
-  page[3] = "contact"
 
   var search
   var show
-  var menuM = document.getElementById('cardMenu')
+  let cardMenu = document.getElementById("cardMenu")
+  let display 
+  display = cardMenu.style.display;
 
-  for(var i = 0; i<4; i++){
+  for(var i = 0; i<3; i++){
       search = document.getElementById(page[i])
-      show = search.style.display = "none";
+      search.style.display = "none";
 
       if (page[i] == nav){
-          search.style.display = "block"
-
-          alertSize()
-          if(myWidth < 767){
-              menuM.style.display = 'none'
-           }
-        }
-    }
+        search.style.display = "block";
+      }
+      alertSize()
+   }
 }

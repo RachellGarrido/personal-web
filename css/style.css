@@ -50,7 +50,7 @@ header{
     border-right: 4px solid #CCCCD9;
     border-bottom: 4px solid #CCCCD9;
     padding-bottom: 50px;
-    z-index: 90;
+    z-index: 100;
 }
 
 .menuLogoContainer{
@@ -105,12 +105,6 @@ header{
     margin: 0em .4em;
     color: #CCCCD9;
 }
-.i04::before{
-    font-family: 'icomoon';
-    content: "\e901";
-    margin: 0em .4em;
-    color: #CCCCD9;
-}
 
 .prev_page,
 .next_page{
@@ -140,11 +134,56 @@ header{
 .next_arrow{
     transform: rotate(180deg)
 }
+
+.footer{
+    width: 100%;
+    height: 80px;
+    z-index: 80;
+    background: black;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.footer-rrss{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    align-content: center;
+}
+
+.rrss{
+    color:#CCCCD9;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.rs01::before{
+    font-family: 'icomoon';
+    content: "\e901";
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+.rs02::before{
+    font-family: 'icomoon';
+    content: "\e904";
+    font-size: 1.4em;
+    vertical-align: middle;
+}
+
+.footerText{
+    font-size: .8em;
+}
+
 /*div de paginas*/
 .page_sections{
     width: 100%;
     position: relative;
-    height: 400px;
     top: 0px;
 }
 /*Todas las página*/
@@ -153,7 +192,7 @@ header{
 	width: 100%;
 	top: 0px;
     left: 0px;
-    height: 100vh;
+    height: 600px;
 }
 
 .home{
@@ -165,13 +204,8 @@ header{
 }
 .what{
 
-    background: orangered;
+    background: yellow;
 }
-.contact{
-
-    background: purple;
-}
-
 
 
 @media screen and (min-width: 480px){
@@ -179,7 +213,12 @@ header{
 
 }
 @media screen and (min-width: 600px){
-
+    .rrss{
+        font-size: 1.2em;
+    }
+    .footerText{
+        font-size: .9em;
+    }
 
 }
 @media screen and (min-width: 767px){
@@ -192,7 +231,6 @@ header{
     .i01::before,
     .i02::before,
     .i03::before,
-    .i04::before,
     .listItem:nth-last-child(1){
         content: "";
         border: none;
