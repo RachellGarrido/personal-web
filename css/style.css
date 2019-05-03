@@ -2,14 +2,14 @@ body{
     font-family: "Roboto-Thin", sans-serif;
     font-size: 16px;
     position: relative;
-    background: white;
+    background: #29242E;
 }
 
-header{
+header{ 
     width: 100%;
     background: black;
     height: 50px;
-    position: relative;
+    position: fixed;
     z-index: 90;
     top: 0px;
 }
@@ -144,35 +144,37 @@ header{
     bottom: 0px;
     text-align: center;
     color: white;
-    margin-top: 30px;
+    box-shadow: 0px -5px 10px 0px rgba(176, 125, 209,.5);
 }
 
 
 .footer-rrss{
+    text-align: center;
     display: inline-block;
     width: 100%;
     height: 40px;
-    margin-top: 5px;
-    align-content: center;
+    margin: 13px 0px -5px;
+    vertical-align: middle;
 }
 
 .rrss{
     color:#CCCCD9;
     text-decoration: none;
     margin: 0px 10px;
-    padding: 10px 10px;
-    vertical-align: middle;
+    padding: 5px;
 }
+
 .rs01::before{
     font-family: 'icomoon';
     content: "\e901";
     font-size: 1.4em;
     vertical-align: middle;
+    margin: 0em .2em;
 }
 .rs02::before{
     font-family: 'icomoon';
     content: "\e904";
-    font-size: 1.4em;
+    font-size: 1.3em;
     vertical-align: middle;
 }
 
@@ -184,20 +186,92 @@ header{
 .page_sections{
     width: 100%;
     position: relative;
-    top: 0px;
+    top: 50px;
 }
 /*Todas las página*/
-.page{
+.page_home{
     position: absolute;
 	width: 100%;
 	top: 0px;
     left: 0px;
-    height: 600px;
 }
 
-.home{
-    background: red;
+.personal-info{
+   /* background: green;*/
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 35px;
+    width: 80%;
 }
+
+.header-home{
+    margin: 20px 0px;
+    width: 100%;
+    height: 150px;
+    text-align: center;   
+   /* background: yellow;*/
+}
+
+
+.photoContainer{
+    width: 130px;
+    height: 130px;
+    margin: 0px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgba(176, 125, 209,.5);
+}
+.photo{
+    width: 100%;
+}
+
+
+.infoParagraph{
+    font-family: 'Helvetica';
+    margin: 12px 5px;  
+    color: white;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+.dev-skills{
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 100px;
+    width: 80%;
+}
+
+.skill-title{
+    margin: 0px;
+    padding: 0px 0px 20px 5px;
+    font-family: 'Coolvetica';
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 1px rgba(28, 110, 164, .8);
+}
+
+.skill-ul{
+    width: 40%;
+    margin: 0px 0px 30px 0px;
+	padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+}
+.skill-li{
+    margin: 0px;
+	padding: 5px;
+}
+
+.skill-li::before{
+    content: "- ";
+    text-shadow: 1px 2px 1px #b07dd1;
+}
+
+
 .about{
 
     background: yellowgreen;
@@ -234,6 +308,10 @@ header{
     .listItem:nth-last-child(1){
         content: "";
         border: none;
+    }
+
+    .linkItem:hover{
+        text-shadow: 2px 6px 5px #CCCCD9;
     }
     
     header{
@@ -305,11 +383,10 @@ header{
     .i01{
         margin-left: 10px
     }
+
 }
 @media screen and (min-width: 950px){
-    body{
-        background: blue
-    }
+
     .headTitle{
         margin-left: 40px;
     }
@@ -325,4 +402,82 @@ header{
         font-size: 1.1em;
     }
 
+    .footer{
+        box-shadow: none;
+    }
+
+    .page_home > div{
+        margin: 0px;
+        margin-left: 90px;
+        padding: 25px 0px 0px 0px;
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+
+    .photoContainer{
+        width: 100px;
+        height: 100px;
+    }
+    .header-home{
+        height: 120px;
+    }
+
+    .infoParagraph{
+        font-size: .8em;
+    }
+
+    .skill-title{
+        font-size: 1.3em;
+    }
+    .skill-ul{
+        font-size: .9em;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .page_home > div{
+        padding: 40px 0px;
+    }
+    .photoContainer{
+        width: 110px;
+        height: 110px;
+    }
+    .infoParagraph{
+        font-size: .9em;
+    }
+    .skill-title{
+        font-size: 1.4em;
+    }
+    
+}
+@media screen and (min-width: 1400px){
+    .page_home > div{
+        margin: 0px;
+        margin-left: 150px;
+        padding: 60px 0px 0px 0px;
+        display: inline-block;
+        width: 40%;
+        vertical-align: middle;
+    }
+
+    .photoContainer{
+        width: 120px;
+        height: 120px;
+    }
+    .header-home{
+        height: 140px;
+    }
+
+    .infoParagraph{
+        font-size: 1em;
+    }
+
+    .skill-title{
+        font-size: 1.6em;
+    }
+    .skill-ul{
+        font-size: 1em;
+    }
 }
