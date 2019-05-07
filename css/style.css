@@ -75,10 +75,10 @@ header{
     font-size: 1.5em;
     line-height: 40px;
     padding: .5em 0em;
-    border-top: 1px solid rgba(255, 255, 0,.5);
+    border-top: 1px solid #CCCCD9;
 }
 .listItem:nth-last-child(1){
-    border-bottom: 1px solid rgba(255, 255, 0,.5);
+    border-bottom: 1px solid #CCCCD9;
 
 }
 .linkItem{
