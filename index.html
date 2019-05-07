@@ -20,10 +20,8 @@
 <body>
     <header>
         <h1 class="headTitle">
-            <a href="index.html">
-                <figure class="headerLogoContainer"> 
+            <a href="index.html" class="headerLogoContainer">
                     <img src="img/iconrg.png" alt="Logo Rachell Garrido" class="headerLogo">
-                </figure>
             </a>
             <a href="index.html">Rachell Garrido</a>
         </h1>
@@ -56,13 +54,14 @@
     </header>
 
     <div id="page_sections" class="page_sections">
-        <!-- página de inicio -->
-        <section class="page_home" id="home" style="display:block">
 
+        <section class="page-home" id="home" style="display:block">
+
+           <div class="container-home">
            <div class="personal-info">
             <div class="header-home">
                 <figure class="photoContainer">
-                    <img src="img/bati.png" alt="" class="photo">
+                    <img src="img/rg.png" alt="Foto de perfil Rachell Garrido" class="photo">
                 </figure>
             </div>
             <div class="infoContainer">
@@ -84,7 +83,7 @@
             </div>
             </div>
             <div class="dev-skills">
-                <h2 class="skill-title">Programación</h2>
+                <h2 class="skillTitle">Programación</h2>
                 <ul class="skill-ul">
                     <li class="skill-li">HTML</li>
                     <li class="skill-li">JavaScript</li>
@@ -100,7 +99,7 @@
                     <li class="skill-li">Angular</li>
                 </ul>
                 
-                <h2 class="skill-title">Conocimientos</h2>
+                <h2 class="skillTitle">Conocimientos</h2>
                 <ul class="skill-ul">
                     <li class="skill-li">GIT</li>
                     <li class="skill-li">SEO</li>
@@ -112,19 +111,63 @@
                     <li class="skill-li">Pug</li>
                     <li class="skill-li">Gulp</li>
                     <li class="skill-li">Sass</li>
-
                 </ul>
             </div>
-
-            
-        
-
+            </div>
         </section>
 
-        <section class="page about" id="aboutMe" style="display:none">
-        </section></section>
-        <section class="page what" id="whatImDoingNow" style="display:none">
-        </section></section>
+        <section class="page-about" id="aboutMe" style="display:none">
+           
+            <div class="container-about">
+                <article>
+                <h2 class="aboutTitle">Sobre mí</h2>
+                <div>
+                <p class="aboutParagraph"> Vivo en Santiago, Chile. Tengo 22 años.
+                    Me considero una geek, me encanta pasar
+                    mi tiempo libre estudiando y aprendiendo
+                    nuevas habilidades. A parte de la informática
+                    siento un profundo interés en el arte y la psicología,
+                    en especial como influye el diseño en las experiencias humanas.
+                </p>
+                </div>
+
+                <div class="hobbie-container">
+
+                <h2 class="aboutTitle">Interéses y hobbies</h2>
+
+                <ul class="hobbieList">
+                    <li class="hobbieItem">Comics</li>
+                    <li class="hobbieItem">Videojuegos</li>
+                    <li class="hobbieItem">Guitarra</li>
+                    <li class="hobbieItem">Ukelele</li>
+                    <li class="hobbieItem">Cine</li>
+                </ul>
+                <ul class="hobbieList">
+                    <li class="hobbieItem">Programación</li>
+                    <li class="hobbieItem">CyberPunk</li>
+                    <li class="hobbieItem">Libros</li>
+                    <li class="hobbieItem">Meditación</li>
+                    <li class="hobbieItem">Hamsters</li>
+                </ul>          
+                </div>
+                </article>
+            </div>          
+        </section>
+
+        <section class="page-what" id="whatImDoingNow" style="display:none">     
+            <div class="container-what">
+                <article>
+                    <h2 class="whatTitle">¿En qué estoy? (:</h2>
+                    <div class="whatParagraph">
+                        <p>Actualmente busco aumentar mi experiencia en
+                            desarrollo web. También realizo formateo y
+                            mantenimiento de sistemas de forma independiente.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        
+        </section>
     </div>
     
     <footer class="footer">
