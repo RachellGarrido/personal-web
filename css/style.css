@@ -75,10 +75,10 @@ header{
     font-size: 1.5em;
     line-height: 40px;
     padding: .5em 0em;
-    border-top: 1px solid rgba(204,204,217,.3);
+    border-top: 1px solid rgba(255, 255, 0,.5);
 }
 .listItem:nth-last-child(1){
-    border-bottom: 1px solid rgba(204,204,217,.3);
+    border-bottom: 1px solid rgba(255, 255, 0,.5);
 
 }
 .linkItem{
@@ -127,9 +127,10 @@ header{
 .prev_arrow,
 .next_arrow{
     position: relative;
-    width: 250%;
-    top: -30px;
-    right: 30px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+
 }
 .next_arrow{
     transform: rotate(180deg)
@@ -248,10 +249,10 @@ header{
     margin: 0px;
     padding: 0px 0px 20px 5px;
     font-family: 'Coolvetica';
-    color: black;
+    color: #CCCCD9;
     font-size: 1.7em;
     letter-spacing: 1px;
-    text-shadow: 1px 2px 1px rgba(28, 110, 164, .8);
+    text-shadow: 1px 2px 1px black;
 }
 
 .skill-ul{
@@ -283,10 +284,9 @@ header{
     margin-bottom: 120px;
     margin-top: 30px;
 }
-.aboutTitles{
-    text-shadow: 1px 2px 1px rgba(28, 110, 164, .8);
-    margin-top: 15px;
-    padding-top: 0px;
+.aboutTitle{
+    margin-top: 20px;
+
 }
 .hobbie-container{
     position: relative;
